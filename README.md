@@ -6,9 +6,7 @@ In language like c++ and java, they have predefined data structures like STL whe
 
 This headerfile allows you to use the data structures without caring what is happening inside.
 
-To use this dsa header you need to download the headerfile and include it by using
-
-#include "path_to_the_file/dsa.h"
+To use this dsa header you need to download the headerfile and include it by using #include "path_to_the_file/dsa.h"
 	
 Include it in your C program and directly use data structures that are available in the header
 
