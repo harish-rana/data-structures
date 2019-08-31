@@ -1,0 +1,123 @@
+In this header, the following data structures 
+are there
+
+		1) SLL - Singly Linked List
+		2) DLL - Doubly Linked List
+		3) Stack
+		4) Queue
+		5) BST - Binary Search Tree
+		6) AVL trees
+		7) MinHeap
+		8) MaxHeap
+		
+To create the data structures of your wish, 
+you need to use the following method
+	
+	to create a singly Linked List
+		SLL* <pointer_name> = createSLL();
+		
+	to create a Doubly Linked List
+		DLL* <pointer_name> = createDLL();
+		
+	to create a stack
+		Stack* <pointer_name> = createStack();
+		
+	to create a Queue
+		Queue* <pointer_name> = createQueue();
+		
+	to create a Binary search tree
+		BST* <pointer_name> = createBST();
+		
+	to create a AVL tree
+		AVL* <pointer_name> = createAVL();
+		
+	to create a MinHeap
+		MinHeap* <pointer_name> = createMinHeap(arr,n);
+		
+	to create a MaxHeap
+		MaxHeap* <pointer_name> = createMaxHeap(arr,n);								
+
+
+If you are using this header, you are allowed 
+to create only pointer to a structure and structure
+variable to point a particular the structures are not
+allowed
+
+AVL a = createAVL(); // not allowed
+AVL *a = createAVL(); // allowed 		
+		  		
+In the case of MinHeap and MaxHeap you are required to
+create an array external in your main program and pass
+that to MinHeap/MaxHeap.
+
+Each data structure that is mentioned above have their 
+own member function. (Member functions in C can be achieved
+by the use of function pointers only and direct declaration
+of functions inside structures are not allowed)
+		  		
+The following are the member functions that can be used 
+inside for the particular structure you have declared
+
+
+
+functions in singly linked list
+   	void (*print)(SLL*);
+   	void (*printreverse)(SLL*);
+   	void (*pushAtStart)(SLL*, int);
+   	void (*pushAtEnd)(SLL*, int);
+   	void (*pushAtPosition)(SLL*, int, int);
+    int  (*popAtStart)(SLL*);
+    int  (*popAtEnd)(SLL*);
+   	void (*reverse)(SLL*);
+   	int  (*isEmpty)(SLL*);
+   	int  (*peek)(SLL*);
+
+functions in doubly linked list
+ 	void (*print)(DLL*);
+ 	void (*pushAtStart)(DLL*, int);
+ 	void (*pushAtEnd)(DLL*, int);
+	int  (*popAtStart)(DLL*);
+	int  (*popAtEnd)(DLL*);
+ 	int  (*isEmpty)(DLL*);
+ 	int  (*peek)(DLL*);
+
+functions in Stack
+	void (*push)(Stack*,int);
+	int  (*pop)(Stack*);
+	int  (*peek)(Stack*);
+	int  (*isEmpty)(Stack*);
+
+function in queue  
+	void (*push)(Queue*,int);
+	int  (*pop)(Queue*);
+	int  (*peek)(Queue*);
+	int  (*isEmpty)(Queue*);
+
+functions in binary search tree
+	void (*push)(BST*,int);
+	void (*inOrder)(BST*);
+	void (*preOrder)(BST*);
+	void (*postOrder)(BST*);
+
+functions in AVL tree
+	void (*push)(AVL*,int);
+	void (*inOrder)(AVL*);
+	void (*preOrder)(AVL*);
+	void (*postOrder)(AVL*);
+	
+	
+functions in MaxHeap
+  void (*build)(MaxHeap*);
+	void (*push)(MaxHeap*,int);
+	int  (*pop)(MaxHeap*);
+	int  (*peek)(MaxHeap*);
+	void (*print)(MaxHeap*);
+	
+
+functions in MinHeap
+  void (*build)(MinHeap*);
+	void (*push)(MinHeap*,int);
+	int  (*pop)(MinHeap*);
+	int  (*peek)(MinHeap*);
+	void (*print)(MinHeap*);	
+		  		
